@@ -1,0 +1,214 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.light {
+  --bgColor: white;
+  --textColor: black;
+  --secondBg: #F6F4F2;
+
+  .custom-btn {
+    color: white;
+    background-color: #000000;
+  }
+}
+
+.dark {
+  --bgColor: black;
+  --textColor: white;
+  --secondBg: black;
+
+  .inverted {
+    filter: invert(100%);
+  }
+
+  .bodydark {
+    background-color: black;
+  }
+
+  .custom-btn {
+    color: black;
+    background-color: white;
+  }
+}
+
+p {
+  color: var(--textColor);
+}
+
+.textfordark {
+  color: var(--textColor);
+}
+
+
+
+
+h1 {
+  font-family: 'Italiana', sans-serif;
+  /* color: var(--textColor); */
+}
+
+.lang {
+  border-style: none;
+}
+
+.darktext {
+  color: black !important;
+}
+
+
+.banner {
+  background-color: var(--secondBg) !important;
+}
+
+.foots {
+  background-color: var(--secondBg) !important;
+}
+
+.advantages {
+  background-color: var(--secondBg) !important;
+  width: 100%;
+  /* padding: 20px;
+  border-radius: 10px; */
+}
+
+.cart {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 28px;
+  height: auto;
+  overflow: hidden;
+
+  .material-icons {
+    position: relative;
+    top: 2px;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 11px;
+    border-radius: 50%;
+    background: #d60b28;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.italiana {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 5rem;
+  color: var(--textColor);
+}
+
+.miniheads {
+  font-family: "Playfair Display", serif;
+}
+
+.justifytext {
+  text-align: justify;
+}
+
+.shop {
+  background-color: #000000;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 150px;
+}
+
+.heads {
+  font-family: "Playfair Display", serif;
+    font-size: 8rem;
+  color: white !important;
+}
+
+.readm {
+  height: 40px;
+  background-color: white;
+  width: 150px;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: var(--textColor);
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--textColor);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.box-area {
+  width: 930px;
+}
+
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+
+.header-text {
+  font-family: "Playfair Display", serif;}
+
+@media (max-width:768px) {
+  .italiana {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:320px) and (max-width:425px) {
+  .heads {
+    font-size: 0.5rem;
+  }
+}
+
+.positinbtn {
+  position: relative;
+}
+
+.btnimage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #F6F4F2;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btnimage:hover {
+  background-color: black;
+  color: white;
+}
